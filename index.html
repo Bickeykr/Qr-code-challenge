@@ -20,7 +20,7 @@
     }
 
 
-    .QR-code {
+    .QR-Container {
       width: 240px;
       background-color:  hsl(0, 0%, 100%) ;
       text-align: center;
@@ -30,21 +30,21 @@
       
     }
 
-    h1{
+    .info-block h1{
       font-size: 16px;
       color: hsl(218, 44%, 22%);
       font-weight: 700;
       padding: 0 1.4rem 0;
     }
 
-    p{
+    .info-block p{
       font-size: 11px;
       color: hsl(220, 15%, 55%);
       font-weight: 400;
       padding: 0 1.6rem 2rem ;
     }
 
-    img{
+    .img-block{
       width: 220px;
       margin: 10px 0 0 ;
       border-radius: 10px ;
@@ -62,13 +62,15 @@
 
 <body>
 
-  <div class="QR-code">
-    <img src="images/image-qr-code.png" alt="">
-
+  <main class="QR-Container">
+    <div class="img-block"> 
+  <img src="images/image-qr-code.png" alt="">
+    </div>
+    <div class="info-block"> 
   <h1>Improve your front-end skills by building projects</h1>
-
   <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-</div >
+      </div>
+</main >
 
 
 
